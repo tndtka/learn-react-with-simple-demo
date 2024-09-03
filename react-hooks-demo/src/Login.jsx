@@ -46,20 +46,20 @@ export default function Login() {
       if(email === User.email && pw === User.pw) {
         alert('로그인에 성공했습니다.')
       } else {
-        alert("등록되지 않은 회원입니다.");
+        alert("등록되지 않은 사원입니다.");
       }
     }
 
     return (
       <div className="page">
         <div className="titleWrap">
-          이메일과 비밀번호를
+          사원번호과 비밀번호를
           <br />
           입력해주세요
         </div>
 
         <div className="contentWrap">
-          <div className="inputTitle">이메일 주소</div>
+          <div className="inputTitle">사원번호</div>
           <div
             className="inputWrap"
           >
@@ -73,7 +73,7 @@ export default function Login() {
           </div>
           <div className="errorMessageWrap">
             {!emailValid && email.length > 0 && (
-              <div>올바른 이메일을 입력해주세요.</div>
+              <div>올바른 사원번호를 입력해주세요.</div>
             )}
           </div>
 
